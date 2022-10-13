@@ -4,7 +4,7 @@ class   EventsController < ApplicationController
     #GET /events
     def index
       events=Event.all
-      render json: events
+      render json: events, status: :ok
     end
 
     #POST /events
@@ -17,7 +17,7 @@ class   EventsController < ApplicationController
     def update
       events=find_event
       events.update(event_params)
-      render json: events
+      render json: events, status: :created
     end
 
     #DELETE/events/:id
