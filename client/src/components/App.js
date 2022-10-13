@@ -6,6 +6,7 @@ import NavBar from "./NavBar";
 import Home from "./Home";
 import Header from "./Header";
 
+
 function App() {
   const [user, setUser] = useState(null);
 

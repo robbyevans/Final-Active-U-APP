@@ -80,7 +80,7 @@ function Home({ user }) {
           ))}
         </section>
       </main>
-
+      {/* <Footer/> */}
 
     </>;
   } else {
