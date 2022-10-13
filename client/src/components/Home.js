@@ -19,13 +19,13 @@ function Home({ user }) {
 
 
   useEffect(() => {
-    fetch("/events")
+    fetch("api/events")
       .then((r) => r.json())
       .then(setEvents);
   }, []);
 
   useEffect(() => {
-    fetch(`/tickets/`)
+    fetch(`api/tickets/`)
       .then((r) => r.json())
       .then(setBook);
   }, []);

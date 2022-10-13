@@ -21,7 +21,7 @@ function NewSpiceForm({ onAddSpice }) {
 
   function handleSubmit(e) {
     e.preventDefault();
-    fetch("/events", {
+    fetch("api/events", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

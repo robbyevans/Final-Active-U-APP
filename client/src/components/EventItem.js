@@ -10,7 +10,7 @@ function EventItem({ spice, onUpdateSpice, onDeleteSpice  }) {
 
   function handleUpdateRating(pct) {
     const newRating = pct * 5;
-    fetch(`/events/${id}`, {
+    fetch(`api/events/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -23,7 +23,7 @@ function EventItem({ spice, onUpdateSpice, onDeleteSpice  }) {
 
   function handleBook() {
     setIsRead(!isRead)
-    fetch(`/tickets`, {
+    fetch(`api/tickets`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -35,7 +35,7 @@ function EventItem({ spice, onUpdateSpice, onDeleteSpice  }) {
 
 
   function handleDeleteEvent() {
-    fetch(`/events/${id}`, {
+    fetch(`api/events/${id}`, {
       method: "DELETE",
     }).then((r) => {
       if (r.ok) {
