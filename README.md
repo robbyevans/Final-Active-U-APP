@@ -1,6 +1,6 @@
 # Active-U web application 1.0
 ​
-live link: https://lyrical-react-web-app.herokuapp.com/
+live link:
 ​
 ## Authors:
 ​
